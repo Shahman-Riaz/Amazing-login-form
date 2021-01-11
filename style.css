@@ -1,0 +1,175 @@
+
+header,main,aside,article,footer {
+    filter: blur(110px);
+}
+header {
+ background: rgb(82, 240, 174);
+ height: 130px;
+}
+
+main {
+background: rgb(131, 5, 74),rgb(255, 3, 142);
+ height: 145px;
+ font-size: 30px;
+}
+aside {
+ background: linear-gradient(90deg,rgb(228, 217, 66),rgb(27, 14, 209));
+ height: 140px;
+}
+article {
+ background-color: rgb(250, 28, 176);
+ height: 145px;
+}
+footer {
+ background:rgb(40, 26, 231);
+ height: 150px;
+}
+section{
+ position: absolute;
+ top: 100px;
+ left: 100px;
+ right: 100px;
+ display: flex;
+ justify-content: center;
+ height: 450px;
+ 
+}
+
+.container {
+ width: 450px;
+ min-height: 420px;
+ background-color: rgba(255,255,255,0.1);
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ backdrop-filter: blur(4px);
+ box-shadow: 0 25px 45px rgb(150, 141, 141);
+ border-right: 1px solid rgba(255,255,255,0.5);
+ border: 1px solid rgba(255,255,255,0.2);
+}
+.form {
+ width: 100%;
+ height: 100%;
+ padding: 40px;
+}
+.form h2 {
+ color: white;
+ font-size: 35px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ margin-bottom: 40px;
+}
+.form h2::before {
+ content: "";
+ position: absolute;
+ left: 10;
+ top: 30%;
+ width: 22%;
+ height: 4px;
+ background-color: whitesmoke;
+ border-radius: 50px;
+}
+.form .inputBox {
+  
+ margin-top: 20px;
+
+}
+.form .inputBox input {
+  width: 90%;
+ background-color: rgba(255,255,255,0.2);
+ border: none;
+ outline: none;
+ padding: 10px 20px;
+ border-radius: 20px;
+ border-right: 1px solid rgba(255,255,255,0.5);
+ border: 1px solid rgba(255,255,255,0.2);
+ font-size: 16px;
+ letter-spacing: 1px;
+ color: #fff;
+ box-shadow: 0 5px  rgba(0,0,0,0.05);
+}
+.form .inputBox input::placeholder {
+ columns: #fff;
+}
+.form .inputBox input[type="submit"] {
+ background-color: #fff;
+ color: #666;
+ cursor: pointer;
+ margin-bottom:20px ;
+ font-weight: 600;
+ width: 20%;
+ text-align: center;
+}
+.forget {
+ color: #fff;
+
+}
+.forget a {
+ color: #fff;
+
+}
+.box .square {
+ position: absolute;
+ backdrop-filter: blur(4px);
+ box-shadow: 0 25px 45px rgb(150, 141, 141);
+ border-right: 1px solid rgba(255,255,255,0.5);
+ border: 1px solid rgba(255,255,255,0.2);
+ animation: animate 10s linear infinite;
+ animation-delay: calc(-5s * var())
+}
+.box .square:nth-child(1) {
+ top: -50px;
+ right: 200px;
+ height: 120px;
+ width: 120px;
+ border-radius: 50%;
+}
+.box .square:nth-child(2) {
+top: 250px;
+ left: 270px;
+ height: 130px;
+ width: 130px;
+ transform: rotate(45deg);
+ border-radius: 55px 55px 55px 0px;
+ 
+}
+.box .square:nth-child(3) {
+ top: -50px;
+ right: 700px;
+ height: 100px; 
+ width:  100px;
+ z-index: 1;
+ transform: rotate(45deg);
+
+}
+.box .square:nth-child(4) {
+ top: 340px;
+ left: 800px;
+ height:80px ;
+ width: 80px;
+ border-radius: 50%;
+ z-index: 1;
+  
+}
+.box .square:nth-child(5) {
+ top: 200px;
+ left: 855px;
+ height:20px; 
+ width:60px;
+ border-radius: 25px;
+ z-index: 1;
+ transform: rotate(135deg);
+}
+@keyframes animate{
+ 0%{
+     transform: translateX(-20px);
+ }
+ 30% {
+     transform: translateX(20px);
+ }
+ 70%{
+     rotate: 90deg;
+ }
+ 
+}
